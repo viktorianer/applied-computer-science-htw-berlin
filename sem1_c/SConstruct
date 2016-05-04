@@ -1,0 +1,34 @@
+# Teil 1: Optionen
+include_dateien    = [    # wo wird nach .h Dateien gesucht?
+    '.'                   # im lokalen Verzeichnis
+]
+shared_libraries   = [    # mathematische Funktionen der
+    'm'                   # Standartbibliothek
+]
+c_standard         = [    # Angaben zum Standard
+    '-std=c99',           # C99
+    '-pedantic'           # keine Erweiterungen zulaessig
+]
+warnungen          = [    # Einstellungen zu Warnungen
+    '-Wall',              # viel meckern
+    '-Wextra',            # extra viel meckern
+    '-Werror'             # Warnungen sind Fehler
+] 
+
+# Teil 2: Definition des Environments
+std = Environment(
+  CCFLAGS = c_standard + warnungen,
+  CPPPATH = include_dateien,
+  LIBS    = shared_libraries
+) 
+
+# Teil 3: Programm bauen
+c_dateien = [                          				# hier C-Dateien einfuegen
+    'die_kugel_main.c',
+    'interaktionen.c',
+    'laengeneinheiten.c'
+]
+programm_name = 'die_kugel'     # hier Programmnamen festlegen 
+
+#---------------------------------------------------------------------
+std.Program(programm_name, c_dateien)  # Programm bauen

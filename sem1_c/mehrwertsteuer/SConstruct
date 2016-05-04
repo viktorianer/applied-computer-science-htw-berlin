@@ -1,0 +1,25 @@
+# Teil 1: Optionen
+include_dateien    = [    # wo wird nach .h Dateien gesucht?
+    '.'                   # im lokalen Verzeichnis
+]
+c_standard         = [    # Angaben zum Standard
+    '-std=c99',           # C99
+    '-pedantic'           # keine Erweiterungen zulaessig
+]
+warnungen          = [    # Einstellungen zu Warnungen
+    '-Wall',              # viel meckern
+    '-Wextra',            # extra viel meckern
+    '-Werror'             # Warnungen sind Fehler
+] 
+# Teil 2: Definition des Environments
+std = Environment(
+  CCFLAGS = c_standard + warnungen,
+  CPPPATH = include_dateien
+) 
+# Teil 3: Programm bauen
+c_dateien = [                          # hier C-Dateien einfuegen
+    'mehrwertsteuer_main.c',           # Kommentar moeglich
+    'mehrwertsteuer_berechnungen.c',   # Kommentar moeglich
+]
+programm_name = 'mwst_anteil'          # hier Programmnamen festlegen 
+std.Program(programm_name, c_dateien)  # Programm bauen

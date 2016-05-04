@@ -14,3 +14,7 @@ hs_err_pid*
 /.gradle
 /out
 /build
+.sconsign.dblite
+doc/
+bin/
+*.o

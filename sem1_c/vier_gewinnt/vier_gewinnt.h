@@ -1,0 +1,10 @@
+void simuliere_vier_gewinnt (int zeilen, int spalten, const char spieler1[], const char spieler2[]);
+void schreibe_spielfeld(int zeilen, int spalten, int spielfeld[zeilen][spalten]);
+_Bool nechster_zug(int zeilen, int spalten, int spielfeld[zeilen][spalten], int spielstein);
+int erfasse_nechsten_zug(int zeilen, int spalten, int spielfeld[zeilen][spalten]);
+_Bool pruefe_siegesbedingung(int zeilen, int spalten, int spielfeld[zeilen][spalten], int laenge_linie, int spielstein);
+_Bool pruefe_siegesbedingung_horizontal(int zeilen, int spalten, int spielfeld[zeilen][spalten], int laenge_linie, int spielstein);
+_Bool pruefe_siegesbedingung_vertikal(int zeilen, int spalten, int spielfeld[zeilen][spalten], int laenge_linie, int spielstein);
+_Bool pruefe_siegesbedingung_diagonal(int zeilen, int spalten, int spielfeld[zeilen][spalten], int laenge_linie, int spielstein);
+_Bool pruefe_siegesbedingung_diagonal_loru(int zeilen, int spalten, int spielfeld[zeilen][spalten], int laenge_linie, int spielstein);
+_Bool pruefe_siegesbedingung_diagonal_luro(int zeilen, int spalten, int spielfeld[zeilen][spalten], int laenge_linie, int spielstein);

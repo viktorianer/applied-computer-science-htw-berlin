@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;durchschnittsverbrauch_benzin_main&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Ausgabe: &#34;,&#34;Dieses Programm berechnet den durchschnitt Benzinverbrauch und gibt diesen aus. &#34;,&#34;Dabei wird die gefahrene Entfernung (in Kilometer oder amerikanischen Mailen) und &#34;,&#34;der erzielter Verbrauch (in Liter oder amerikanischen Gallonen) auf dieser Strecke &#34;,&#34;durch Benutzer eingegebenen. &#34;,&#34;&#34;,&#34;Nach der Eingabe berechnet das Programm den Durchscnittsverbrauch und die Umrechnung &#34;,&#34;in jeweilige andere Kennzahl.&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<repeat text="&#34;solange die berechnung_neustarten = j ist, wiederhole&#34;" comment="&#34;106 ist der Wert für j, 110 für n&#34;" color="ffffff">
+			<qRepeat>
+				<instruction text="&#34;Ausgabe: Wie möchten Sie die Eingabe tätigen?&#34;,&#34;1) in l/100km&#34;,&#34;2) in mi/gal &#34;,&#34;&#34;,&#34;Ihre Wahl bitte:&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<call text="&#34;erfasse wert für auswahl_der_eingabeart mit erfasse_ganze_zahl&#34;" comment="" color="ffffff"></call>
+				<alternative text="&#34;ist auswahl_der_eingabeart = 1?&#34;" comment="&#34;49 ist der char wert für 1&#34;" color="ffffff">
+					<qTrue>
+						<call text="&#34;berechne durchschnittsverbrauch_l_pro_100km mit &#34;,&#34;gib_durchschnittsverbrauch_l_pro_100km&#34;" comment="" color="ffffff"></call>
+						<call text="&#34;berechne durchschnittsverbrauch_us_mi_pro_gal mit &#34;,&#34;umrechnung_durchschnittsverbrauch&#34;" comment="" color="ffffff"></call>
+					</qTrue>
+					<qFalse>
+						<call text="&#34;berechne durchschnittsverbrauch_us_mi_pro_gal mit &#34;,&#34;gib_durchschnittsverbrauch_us_mi_pro_gal&#34;" comment="" color="ffffff"></call>
+						<call text="&#34;berechne durchschnittsverbrauch_l_pro_100km mit &#34;,&#34;umrechnung_durchschnittsverbrauch&#34;" comment="" color="ffffff"></call>
+					</qFalse>
+				</alternative>
+				<instruction text="&#34;Ausgabe: Aufgrund Ihrer Eingaben habe ich folgende Daten berechnet:&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ausgabe: Sie haben durchschnittsverbrauch_l_pro_100km Liter Benzin pro 100 Kilometer verbraucht.&#34;" comment="&#34;Format 5.2&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ausgabe: Dem entsprechen durchschnittsverbrauch_us_mi_pro_gal gefahrene Meilen pro Gallone Benzin.&#34;" comment="&#34;Format 2.5&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ausgabe: Möchten Sie eine neue Berechnung durchführen (j/n)?&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;erfasse wert für berechnung_neustarten mit antwort_ja_oder_nein&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qRepeat>
+		</repeat>
+		<instruction text="&#34;Ausgabe: &#34;,&#34;Danke, dass Sie dieses Tool genutzt haben! &#34;,&#34;Bis zum nächsten mal!&#34;" comment="" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

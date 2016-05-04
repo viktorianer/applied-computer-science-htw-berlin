@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;umrechnung_durchschnittsverbrauch&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;umrechnungsfaktor = 235,2146&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;umgerechneter_durchschnittsverbrauch = umrechnungsfaktor / durchschnittsverbrauch&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>
