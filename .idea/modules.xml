@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ampelFarben/ampelFarben.iml" filepath="$PROJECT_DIR$/ampelFarben/ampelFarben.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annuitaetenDarlehen/annuitaetenDarlehen.iml" filepath="$PROJECT_DIR$/annuitaetenDarlehen/annuitaetenDarlehen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bruchrechnung/bruchrechnung.iml" filepath="$PROJECT_DIR$/bruchrechnung/bruchrechnung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/einstieg/einstieg.iml" filepath="$PROJECT_DIR$/einstieg/einstieg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fahrkartenautomat/fahrkartenautomat.iml" filepath="$PROJECT_DIR$/fahrkartenautomat/fahrkartenautomat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lineareAbschreibung/lineareAbschreibung.iml" filepath="$PROJECT_DIR$/lineareAbschreibung/lineareAbschreibung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mastermind/mastermind.iml" filepath="$PROJECT_DIR$/mastermind/mastermind.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medienversand/medienversand.iml" filepath="$PROJECT_DIR$/medienversand/medienversand.iml" />
+      <module fileurl="file://$PROJECT_DIR$/papierformate/papierformate.iml" filepath="$PROJECT_DIR$/papierformate/papierformate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textdatei/textdatei.iml" filepath="$PROJECT_DIR$/textdatei/textdatei.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tiere/tiere.iml" filepath="$PROJECT_DIR$/tiere/tiere.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umrechnungVonTemperaturen/umrechnungVonTemperaturen.iml" filepath="$PROJECT_DIR$/umrechnungVonTemperaturen/umrechnungVonTemperaturen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zeitschriftenverlag/zeitschriftenverlag.iml" filepath="$PROJECT_DIR$/zeitschriftenverlag/zeitschriftenverlag.iml" />
+    </modules>
+  </component>
+</project>
