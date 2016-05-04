@@ -1,0 +1,19 @@
+# Die Dokumentation befindet sich im Unterverzeichnis doc.
+OUTPUT_DIRECTORY       = doc
+# Basis für die Dokumentation ist das aktuelle Verzeichnis und alle Unterverzeichnise.
+INPUT                  = ./
+# Alle in Frage kommenden Dateien werden untersucht.
+EXTRACT_ALL            = YES
+# Das Werkzeug dot wird zum Zeichnen der Aufrufhierarchie benutzt.
+# Es gehört zur Visualisierungssoftware Graphviz.
+# Siehe:   http://www.graphviz.org/
+HAVE_DOT               = YES
+# Die Aufrufhierarchie wird erstellt.
+CALL_GRAPH             = YES
+# Der aktuelle Quellcode ist in der Dokumentation zu verlinken
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+# Die Doxyfile-Option hilft bei Fehlern wie "Error: Could not extract bounding box from .eps"
+SHORT_NAMES 	       = YES
+# Die Dokumentation ist in deutscher Sprache zu erstellen
+OUTPUT_LANGUAGE        = German
